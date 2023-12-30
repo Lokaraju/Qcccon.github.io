@@ -220,6 +220,27 @@ li {
   padding: 0;
 }
 
+.menu-nav li {
+  margin-right: 15px; /* Adjust the value to set the desired space between menu items */
+}
+
+/* Adjust the margin for specific menu items (e.g., Home and About) */
+.menu-nav .home,
+.menu-nav .about {
+  margin-right: 30px; /* Adjust the value to set the desired space between Home and About */
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Optional: Add space to the right of the last menu item */
+.menu-nav li:last-child {
+  margin-right: 0;
+}
+
+
 hr {
   box-sizing: content-box; /* 1 */
   height: 1; /* 1 */
@@ -1788,7 +1809,9 @@ Header menu main: Start
   cursor: pointer;
   position: relative;
   z-index: 1;
+  margin-right: 20px; /* Adjust the margin-right value to set the desired space between menu items */
 }
+
 .header-menu .menu-center-block .nav-item .sub-nav {
   position: absolute;
   width: 260px;
